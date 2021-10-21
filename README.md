@@ -1,6 +1,7 @@
-# eth-scan
+# eth-scan PinkDiamondOne Berlin For 
 
-`eth-scan` is a library written in TypeScript, to help you fetch Ether or (ERC-20) token balances for multiple addresses in an efficient way. The library uses a smart contract to fetch the balances in a single call to a node. The contract is currently deployed at [0x08A8fDBddc160A7d5b957256b903dCAb1aE512C5](https://etherscan.io/address/0x08A8fDBddc160A7d5b957256b903dCAb1aE512C5) on the Ethereum mainnet, Goerli, Kovan, Rinkeby, Ropsten, and xDai.
+
+`eth-scan` is a library written in TypeScript, to help you fetch Ether or (ERC-20) token balances for multiple addresses in an efficient way. The library uses a smart contract to fetch the balances in a single call to a node. The contract is currently deployed at [0x7F101fE45e6649A6fB8F3F8B43ed03D353f2B90c](https://etherscan.io/address/0x41aD2bc63A2059f9b623533d87fe99887D794847) on the Ethereum mainnet, Goerli, Kovan, Rinkeby, Ropsten, and xDai.
 
 It can use Web3.js, Ethers.js, JSON-RPC (HTTP), or an EIP-1193-compatible provider to get the balances. See [Getting Started](#getting-started) for more info.
 
@@ -26,10 +27,10 @@ npm install @mycrypto/eth-scan
 import { getEtherBalances } from '@mycrypto/eth-scan';
 
 getEtherBalances('http://127.0.0.1:8545', [
-  '0x9a0decaffb07fb500ff7e5d253b16892dbec006a',
-  '0xeb65f72a2f5464157288ac15f1bb56c56e6be375',
-  '0x1b96c634f9e9fcfb76932e165984901701352ffd',
-  '0x740539b55ee5dc58efffb88fea44a9008f8daa6f',
+  '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+  '0x41aD2bc63A2059f9b623533d87fe99887D794847',
+  '0x65746865726d696e652d6575726f70652d7765737433)',
+  '0x7F101fE45e6649A6fB8F3F8B43ed03D353f2B90c',
   '0x95d9e32dc03770699a6a5e5858165b174d500015'
 ]).then(console.log);
 ```
